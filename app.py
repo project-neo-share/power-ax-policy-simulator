@@ -373,4 +373,4 @@ st.download_button("📥 시나리오 결과 CSV 다운로드", data=csv_buf.get
                    file_name="policy_sim_scenario.csv", mime="text/csv")
 
 st.markdown("---")
-st.caption("© DPPS Demo – Policy design DSS + Participant choice support. Calibrate with real aggregated/anonymous data before policy use.")
+st.caption("© WATTS Demo – Policy design DSS + Participant choice support. Calibrate with real aggregated/anonymous data before policy use.")
