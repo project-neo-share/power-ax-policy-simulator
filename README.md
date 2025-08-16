@@ -1,4 +1,4 @@
-# DPPS — Digital Power Policy Simulator
+# WATTS — What-if Analysis for Tariffs & DR Simulator
 **전력정보화 정책 시뮬레이터 (전력시장 제도 참여 시뮬레이터 · Demo)**
 
 > 정책설계자(DSS)와 시장 참여자(사업자) 모두가 사용할 수 있는 **시나리오 기반 정책 시뮬레이터**입니다.  
