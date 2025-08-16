@@ -226,9 +226,9 @@ with col2:
     fig, ax = plt.subplots()
     im = ax.imshow(heat, origin='lower', aspect='auto',
                    extent=[inc_vals.min(), inc_vals.max(), clr_vals.min(), clr_vals.max()])
-    ax.set_xlabel("인센티브 (KRW/kWh)")
-    ax.set_ylabel("정보 명료도 (0~1)")
-    ax.set_title("참여율(0~1) 민감도")
+    ax.set_xlabel("Incentive (KRW/kWh)")
+    ax.set_ylabel("Information Clarity (0~1)")
+    ax.set_title("Participation Rate (0~1)")
     plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     st.pyplot(fig)
 
