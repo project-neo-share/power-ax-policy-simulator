@@ -7,8 +7,10 @@ import matplotlib.pyplot as plt
 from io import StringIO
 from datetime import datetime
 
-st.set_page_config(page_title="전력시장 제도 참여 시뮬레이터 (Demo)", layout="wide")
+st.set_page_config(page_title="WATTS: What‑if Analysis for Tariffs & DR Simulator", layout="wide")
 
+st.title("WATTS — What‑if Analysis for Tariffs & DR Simulator")
+st.caption("Turn incentives into measurable outcomes. What‑if design for TOU/DR/Capacity before rollout.")
 # -----------------------------
 # Helper functions
 # -----------------------------
