@@ -67,12 +67,6 @@ streamlit_demo/
 
 ---
 
-## 🏷️ 네이밍
-- 권장: **DPPS — Digital Power Policy Simulator**  
-  (또는 PRISM, PMADS, WATTS 등 브랜딩 가능)
-
----
-
 ## 🧩 License (Dual)
 본 저장소는 **코드**와 **문서/콘텐츠**에 서로 다른 라이선스가 적용되는 **듀얼 라이선스** 정책을 따릅니다.
 
