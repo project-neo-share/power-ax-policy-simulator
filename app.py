@@ -283,11 +283,25 @@ col1, col2 = st.columns([1.2, 1.6])
 with col1:
     st.subheader("핵심 성과지표")
     m1, m2, m3, m4 = st.columns(4)
-    m1.metric("참여율", f"{kpis['participation_rate']*100:.1f}%")
-    m2.metric("피크 저감(kW)", f"{kpis['peak_reduction_kw']:.1f}")
-    m3.metric("비용절감/정산(원/월)", f"{kpis['cost_saving_krw']:.0f}")
-    m4.metric("탄소감축(tCO2/월)", f"{kpis['carbon_reduction_ton']:.3f}")
-    st.markdown("**효율성 지표** (낮을수록 효율): **{:,} 원/MW**".format(int(kpis["krw_per_mw"])))
+
+    m1.markdown(f"<p style='font-size:12px;'>참여율<br><b>{kpis['participation_rate']*100:.1f}%</b></p>", unsafe_allow_html=True)
+    m2.markdown(f"<p style='font-size:12px;'>피크 저감(kW)<br><b>{kpis['peak_reduction_kw']:.1f}</b></p>", unsafe_allow_html=True)
+    m3.markdown(f"<p style='font-size:12px;'>비용절감/정산(원/월)<br><b>{kpis['cost_saving_krw']:.0f}</b></p>", unsafe_allow_html=True)
+    m4.markdown(f"<p style='font-size:12px;'>탄소감축(tCO2/월)<br><b>{kpis['carbon_reduction_ton']:.3f}</b></p>", unsafe_allow_html=True)
+
+    st.markdown(
+        "<p style='font-size:12px;'><b>효율성 지표</b> (낮을수록 효율): "
+        f"<b>{int(kpis['krw_per_mw']):,} 원/MW</b></p>",
+        unsafe_allow_html=True
+    )
+#with col1:
+#    st.subheader("핵심 성과지표")
+#    m1, m2, m3, m4 = st.columns(4)
+#    m1.metric("참여율", f"{kpis['participation_rate']*100:.1f}%")
+#    m2.metric("피크 저감(kW)", f"{kpis['peak_reduction_kw']:.1f}")
+#    m3.metric("비용절감/정산(원/월)", f"{kpis['cost_saving_krw']:.0f}")
+#    m4.metric("탄소감축(tCO2/월)", f"{kpis['carbon_reduction_ton']:.3f}")
+#    st.markdown("**효율성 지표** (낮을수록 효율): **{:,} 원/MW**".format(int(kpis["krw_per_mw"])))
 
 with col2:
     st.subheader("민감도 히트맵 (Participation Rate)")
